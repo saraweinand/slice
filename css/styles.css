@@ -1,0 +1,518 @@
+body {
+	font-family: 'Futura', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	padding: .25em 0;
+	margin: 0;
+}
+.landing {
+	background: #94CEDC;
+}
+.landing svg {
+	width: 40%;
+	min-width: 300px;
+	display: block;
+	margin: 0 auto;
+	padding: 6% 0 5% 0;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #444;
+
+}
+
+h3 {
+	text-align: center;
+	margin: 5% 0;
+	padding: 0 15%;
+}
+
+h4 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 1em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	text-align: center;
+	padding: 1em 0;
+	color: #fff;
+}
+
+p {
+	text-align: center;
+	padding: 0 5%;
+	font-family: 'proxmima nova' sans-serif;
+	font-size: .9em;
+	font-weight: 300;
+	color: #444;
+}
+
+button {
+	padding: 1em 3em;
+	text-transform: uppercase;
+	font-size: .75em;
+	display: block;
+	margin: 3% auto;
+	border: none;
+	color: #fff;
+	background: #DB7819;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav {
+	background-color: #444;
+	font-family: 'Lato', sans-serif;
+}
+
+.nav ul.logo li a img{
+	width: 3.5em;
+}
+
+.nav li a img {
+	width: 2em;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.nav li a img:hover {
+	opacity: .7;
+}
+
+.nav li:nth-child(4) a img {
+	width: 1.25em;
+	padding: 0;
+}
+
+.nav li:nth-child(4) {
+	margin-left: 2em;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0 0 0 2em;
+  margin: 0;
+  float: left;
+}
+
+.nav ul:last-of-type {
+	float: right;
+	display: inline-block;
+	padding: 0 2em 0 0;
+}
+.nav li {
+	display: inline-block;
+  font-size: 1em;
+  padding: 1em .25em .75em .25em;
+  font-weight: 300;
+
+}
+
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+	color: #d97827;
+}
+
+section.title {
+	width: 100%;
+}
+
+.features svg {
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+
+.title h1 {
+	padding-top: 5%;
+}
+
+.title h2 {
+	margin: 5% 0 2% 0;
+}
+
+.title h3 {
+	margin: 0 0 5% 0;
+	color: #444;
+	font-weight: 100;
+	font-size: 1em;
+}
+
+div.three-even,
+div.twenty-eighty,
+div.ten-ninety,
+div.thirty-seventy,
+div.fifty-fifty {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.col.ten-ninety,
+.col.twenty-eighty,
+.col.thirty-seventy,
+.col.fourty-sixty,
+.col.fifty-fifty,
+.col.sixty-fourty,
+.col.seventy-thirty,
+.col.eighty-twenty,
+.col.ninety-ten,
+.col.one,
+.col.two-even,
+.col.three-even,
+.col.four-even,
+.col.five-even,
+.col.six-even,
+.col.seven-even,
+.col.eight-even,
+.col.nine-even,
+.col.ten-even {
+	margin-bottom: 1%;
+}
+
+.col.one:first-child {
+	margin: -1% 0 0 0;
+}
+
+.col.one:last-child {
+	margin: 0% 0 0 0;
+}
+
+
+.fork {
+	background: #DB7819;
+	margin-top: 5%;
+}
+
+.fork button {
+	background: #fff;
+	color: #444;
+}
+
+.fork a {
+	text-decoration: none;
+}
+
+.examples section:nth-child(odd) {
+	background: #94CEDC;
+}
+.examples section:nth-child(even) {
+	background: #3E575C;
+}
+
+.col.ten-ninety section.col.one section {
+	width: 100%;
+}
+.col.ten-ninety section.col.two-even section {
+	width: 50%;
+}
+.col.ten-ninety section.col.three-even section {
+	width: 33.33%;
+}
+.col.ten-ninety section.col.four-even section {
+	width: 25%;
+}
+.col.ten-ninety section.col.five-even section {
+	width: 20%;
+}
+.col.ten-ninety section.col.six-even section {
+	width:16.667%;
+}
+.col.ten-ninety section.col.seven-even section {
+	width:14.2857%;
+}
+.col.ten-ninety section.col.eight-even section {
+	width:12.5%;
+}
+.col.ten-ninety section.col.nine-even section {
+	width:11.11%;
+}
+.col.ten-ninety section.col.ten-even section {
+	width:10%;
+}
+
+.ten-ninety section.col.one section:nth-child(1){
+		width: 100%;
+		margin-bottom: 1%;
+	}
+
+.uikits {
+	margin: 5% 0;
+}
+
+.uikits h4 {
+	color: #DB7819;
+	font-size: 3em;
+}
+
+.documentation-snippits h2 {
+	text-align: left;
+}
+
+.documentation-snippits p {
+	text-align: left;
+	padding-left: 0;
+}
+
+.codebox {
+	background: #eee;
+	margin-bottom: 3%;
+}
+
+.codebox em:first-child {
+	color: #DB7819;
+}
+
+.codebox em {
+	color: #3E575C;
+}
+
+
+.footer {
+	font-family: 'proxmima nova' sans-serif;
+	font-weight: 300;
+	background: #94CEDC;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+	.fifty-fifty section:nth-child(1),
+.fifty-fifty section:nth-child(2) {
+	width: 100%;
+}
+
+.fifty-fifty section:nth-child(2) {
+	margin-bottom: 5%;
+}
+
+	.ten-ninety section.col.one section:nth-child(1){
+		width: 100%;
+		margin-bottom: 1%;
+	}
+
+	.ten-ninety section.col.two-even section:nth-child(1),
+	.ten-ninety section.col.two-even section:nth-child(2){
+		width: 50%;
+	}
+
+	.ten-ninety section.col.three-even section:nth-child(1),
+	.ten-ninety section.col.three-even section:nth-child(2){
+		width:50%;
+	}
+	.ten-ninety section.col.three-even section:nth-child(3){
+		width:100%;
+	}
+	.ten-ninety section.col.four-even section{
+		width:50%;
+	}
+	.ten-ninety section.col.five-even section:nth-child(1),
+	.ten-ninety section.col.five-even section:nth-child(2){
+		width:50%;
+	}
+	.ten-ninety section.col.five-even section:nth-child(3),
+	.ten-ninety section.col.five-even section:nth-child(4),
+	.ten-ninety section.col.five-even section:nth-child(5){
+		width:33.33%;
+	}
+	.ten-ninety section.col.six-even section:nth-child(1),
+	.ten-ninety section.col.six-even section:nth-child(2),
+	.ten-ninety section.col.six-even section:nth-child(3),
+	.ten-ninety section.col.six-even section:nth-child(4),
+	.ten-ninety section.col.six-even section:nth-child(5),
+	.ten-ninety section.col.six-even section:nth-child(6){
+		width:33.33%;
+	}
+	.ten-ninety section.col.seven-even section:nth-child(1),
+	.ten-ninety section.col.seven-even section:nth-child(2),
+	.ten-ninety section.col.seven-even section:nth-child(3){
+		width: 33.33%;
+	}
+	.ten-ninety section.col.seven-even section:nth-child(4),
+	.ten-ninety section.col.seven-even section:nth-child(5),
+	.ten-ninety section.col.seven-even section:nth-child(6),
+	.ten-ninety section.col.seven-even section:nth-child(7){
+		width:25%;
+	}
+	.ten-ninety section.col.eight-even section:nth-child(1),
+	.ten-ninety section.col.eight-even section:nth-child(2),
+	.ten-ninety section.col.eight-even section:nth-child(3),
+	.ten-ninety section.col.eight-even section:nth-child(4),
+	.ten-ninety section.col.eight-even section:nth-child(5),
+	.ten-ninety section.col.eight-even section:nth-child(6),
+	.ten-ninety section.col.eight-even section:nth-child(7),
+	.ten-ninety section.col.eight-even section:nth-child(8){
+		width:25%;
+	}
+	.ten-ninety section.col.nine-even section:nth-child(1),
+	.ten-ninety section.col.nine-even section:nth-child(2),
+	.ten-ninety section.col.nine-even section:nth-child(3),
+	.ten-ninety section.col.nine-even section:nth-child(4),
+	.ten-ninety section.col.nine-even section:nth-child(5),
+	.ten-ninety section.col.nine-even section:nth-child(6),
+	.ten-ninety section.col.nine-even section:nth-child(7),
+	.ten-ninety section.col.nine-even section:nth-child(8),
+	.ten-ninety section.col.nine-even section:nth-child(9){
+		width:33.33%;
+	}
+	.ten-ninety section.col.ten-even section:nth-child(1),
+	.ten-ninety section.col.ten-even section:nth-child(2),
+	.ten-ninety section.col.ten-even section:nth-child(3),
+	.ten-ninety section.col.ten-even section:nth-child(4),
+	.ten-ninety section.col.ten-even section:nth-child(5),
+	.ten-ninety section.col.ten-even section:nth-child(6),
+	.ten-ninety section.col.ten-even section:nth-child(7),
+	.ten-ninety section.col.ten-even section:nth-child(8),
+	.ten-ninety section.col.ten-even section:nth-child(9),
+	.ten-ninety section.col.ten-even section:nth-child(10){
+		width:20%;
+	}
+	.ten-ninety section.col.ten-ninety section:nth-child(1) {
+	width: 20%;}
+	.ten-ninety section.col.ten-ninety section:nth-child(2) {
+	width: 80%;}
+	.ten-ninety section.col.ninety-ten section:nth-child(1) {
+	width: 80%;}
+	.ten-ninety section.col.ninety-ten section:nth-child(2) {
+	width: 20%;}
+
+	.ten-ninety section.col.eighty-twenty section:nth-child(1) {
+	width: 70%;}
+	.ten-ninety section.col.eighty-twenty section:nth-child(2) {
+	width: 30%;}
+	.ten-ninety section.col.twenty-eighty section:nth-child(1) {
+	width: 30%;}
+	.ten-ninety section.col.twenty-eighty section:nth-child(2) {
+	width: 70%;}
+
+	.ten-ninety section.col.seventy-thirty section:nth-child(1) {
+	width: 60%;
+	}
+	.ten-ninety section.col.seventy-thirty section:nth-child(2) {
+	width: 40%;
+	}
+	.ten-ninety section.col.thirty-seventy section:nth-child(1) {
+	width: 40%;
+	}
+	.ten-ninety section.col.thirty-seventy section:nth-child(2) {
+	width: 60%;
+	}
+	.ten-ninety section.col.sixty-fourty section:nth-child(1) {
+	width: 50%;
+	}
+	.ten-ninety section.col.sixty-fourty section:nth-child(2) {
+	width: 50%;
+	}
+	.ten-ninety section.col.fourty-sixty section:nth-child(1) {
+	width: 50%;
+	}
+	.ten-ninety section.col.fourty-sixty section:nth-child(2) {
+	width: 50%;
+	}
+
+	.ten-ninety section.col.fifty-fifty section:nth-child(1),
+	.ten-ninety section.col.fifty-fifty section:nth-child(2) {
+	width: 50%;
+	margin-bottom: 0;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+	.col.ten-ninety section.col.two-even section,
+	.col.ten-ninety section.col.three-even section,
+	.col.ten-ninety section.col.four-even section,
+	.col.fifty-fifty section
+	{
+		width:100%;
+	} 
+
+	.col.ten-ninety section.col.nine-even section {
+		width: 33.33%;
+	}
+
+	.col.ten-ninety section.col.ten-even section {
+		width: 20%;
+	}
+
+	
+	.col.ten-ninety section.col.six-even section,
+	.col.ten-ninety section.col.seven-even section,
+	.col.ten-ninety section.col.eight-even section {
+		width: 50%;
+	}
+
+	.col.ten-ninety section.col.five-even section:nth-child(1) {
+		width: 100%;
+	}
+	.col.ten-ninety section.col.five-even section:nth-child(2),
+	.col.ten-ninety section.col.five-even section:nth-child(3),
+	.col.ten-ninety section.col.five-even section:nth-child(4),
+	.col.ten-ninety section.col.five-even section:nth-child(5) {
+		width: 50%;
+	}
+
+	.col.ten-ninety section.col.seven-even section:nth-child(1) {
+		width: 100%;
+	}
+	.col.ten-ninety section.col.seven-even section:nth-child(2),
+	.col.ten-ninety section.col.seven-even section:nth-child(3),
+	.col.ten-ninety section.col.seven-even section:nth-child(4),
+	.col.ten-ninety section.col.seven-even section:nth-child(5),
+	.col.ten-ninety section.col.seven-even section:nth-child(6),
+	.col.ten-ninety section.col.seven-even section:nth-child(7) {
+		width: 50%;
+	}
+
+	.col.ten-ninety section.col.ten-ninety section,
+	.col.ten-ninety section.col.twenty-eighty section,
+	.col.ten-ninety section.col.thirty-seventy section,
+	.col.ten-ninety section.col.fourty-sixty section,
+	.col.ten-ninety section.col.fifty-fifty section,
+	.col.ten-ninety section.col.sixty-fourty section,
+	.col.ten-ninety section.col.seventy-thirty section,
+	.col.ten-ninety section.col.eighty-twenty section,
+	.col.ten-ninety section.col.ninety-ten section {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+/*CLEARFIX*/
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+

@@ -1,0 +1,362 @@
+.frameworkcontainer {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.col {
+	margin:0;
+	padding:0;
+	display: block;
+	float:left;
+
+}
+
+section {
+	float: left;
+	display: inline-block;
+}
+
+.one,
+.two-even,
+.three-even,
+.four-even,
+.ten-ninety,
+.ninety-ten,
+.eighty-twenty,
+.twenty-eighty,
+.seventy-thirty,
+.thirty-seventy,
+.sixty-fourty,
+.fourty-sixty,
+.fifty-fifty {
+	width: 100%;
+	display: block;
+}
+
+/*---- even splits ----*/
+
+.one section{
+	width: 100%;
+}
+
+.two-even section{
+  	width: 50%;
+}
+
+.three-even section{
+	width:33.33%;
+}
+
+.four-even section{
+	width:25%;
+}
+
+.five-even section{
+	width:20%;
+}
+
+.six-even section{
+	width:16.667%;
+}
+
+.seven-even section{
+	width:14.285%;
+}
+
+.eight-even section{
+	width:12.5%;
+}
+
+.nine-even section{
+	width:11.11%;
+}
+
+.ten-even section{
+	width:10%;
+}
+
+/*---- 10-90 & 90-10 ----*/
+
+.ten-ninety section:nth-child(1) {
+	width: 10%;
+}
+
+.ten-ninety section:nth-child(2) {
+	width: 90%;
+}
+
+.ninety-ten section:nth-child(1) {
+	width: 90%;
+}
+
+.ninety-ten section:nth-child(2) {
+	width: 10%;
+}
+
+/*---- 20-80 & 80-20 ----*/
+
+.eighty-twenty section:nth-child(1) {
+	width: 80%;
+}
+
+.eighty-twenty section:nth-child(2) {
+	width: 20%;
+}
+
+.twenty-eighty section:nth-child(1) {
+	width: 20%;
+}
+
+.twenty-eighty section:nth-child(2) {
+	width: 80%;
+}
+
+/*---- 30-70 & 70-30 ----*/
+
+.seventy-thirty section:nth-child(1) {
+	width: 70%;
+}
+
+.seventy-thirty section:nth-child(2) {
+	width: 30%;
+}
+
+.thirty-seventy section:nth-child(1) {
+	width: 30%;
+}
+
+.thirty-seventy section:nth-child(2) {
+	width: 70%;
+}
+
+/*---- 40-60 & 60-40 ----*/
+
+.sixty-fourty section:nth-child(1) {
+	width: 60%;
+}
+
+.sixty-fourty section:nth-child(2) {
+	width: 40%;
+}
+
+.fourty-sixty section:nth-child(1) {
+	width: 40%;
+}
+
+.fourty-sixty section:nth-child(2) {
+	width: 60%;
+}
+
+
+/*---- 50-50 ----*/
+.fifty-fifty section:nth-child(1) {
+	width: 50%;
+}
+
+.fifty-fifty section:nth-child(2) {
+	width: 50%;
+}
+
+/* Tablet Devices - Portrait */
+
+@media screen and (max-width: 768px) {
+	.three-even section:nth-child(1),
+	.three-even section:nth-child(2){
+		width:50%;
+	}
+	.three-even section:nth-child(3){
+		width:100%;
+	}
+	.four-even section{
+		width:50%;
+	}
+	.five-even section:nth-child(1),
+	.five-even section:nth-child(2){
+		width:50%;
+	}
+	.five-even section:nth-child(3),
+	.five-even section:nth-child(4),
+	.five-even section:nth-child(5){
+		width:33.33%;
+	}
+	.six-even section:nth-child(1),
+	.six-even section:nth-child(2),
+	.six-even section:nth-child(3),
+	.six-even section:nth-child(4),
+	.six-even section:nth-child(5),
+	.six-even section:nth-child(6){
+		width:33.33%;
+	}
+	.seven-even section:nth-child(1),
+	.seven-even section:nth-child(2),
+	.seven-even section:nth-child(3){
+		width: 33.33%;
+	}
+	.seven-even section:nth-child(4),
+	.seven-even section:nth-child(5),
+	.seven-even section:nth-child(6),
+	.seven-even section:nth-child(7){
+		width:25%;
+	}
+	.eight-even section:nth-child(1),
+	.eight-even section:nth-child(2),
+	.eight-even section:nth-child(3),
+	.eight-even section:nth-child(4),
+	.eight-even section:nth-child(5),
+	.eight-even section:nth-child(6),
+	.eight-even section:nth-child(7),
+	.eight-even section:nth-child(8){
+		width:25%;
+	}
+	.nine-even section:nth-child(1),
+	.nine-even section:nth-child(2),
+	.nine-even section:nth-child(3),
+	.nine-even section:nth-child(4),
+	.nine-even section:nth-child(5),
+	.nine-even section:nth-child(6),
+	.nine-even section:nth-child(7),
+	.nine-even section:nth-child(8),
+	.nine-even section:nth-child(9){
+		width:33.33%;
+	}
+	.ten-even section:nth-child(1),
+	.ten-even section:nth-child(2),
+	.ten-even section:nth-child(3),
+	.ten-even section:nth-child(4),
+	.ten-even section:nth-child(5),
+	.ten-even section:nth-child(6),
+	.ten-even section:nth-child(7),
+	.ten-even section:nth-child(8),
+	.ten-even section:nth-child(9),
+	.ten-even section:nth-child(10){
+		width:20%;
+	}
+
+	.ten-ninety section:nth-child(1) {
+	width: 20%;
+	}
+	.ten-ninety section:nth-child(2) {
+	width: 80%;
+	}
+	.ninety-ten section:nth-child(1) {
+	width: 80%;
+	}
+	.ninety-ten section:nth-child(2) {
+	width: 20%;
+	}
+	.eighty-twenty section:nth-child(1) {
+	width: 70%;
+	}
+	.eighty-twenty section:nth-child(2) {
+	width: 30%;
+	}
+	.twenty-eighty section:nth-child(1) {
+	width: 30%;
+	}
+	.twenty-eighty section:nth-child(2) {
+	width: 70%;
+	}
+	.seventy-thirty section:nth-child(1) {
+	width: 60%;
+	}
+	.seventy-thirty section:nth-child(2) {
+	width: 40%;
+	}
+	.thirty-seventy section:nth-child(1) {
+	width: 40%;
+	}
+	.thirty-seventy section:nth-child(2) {
+	width: 60%;
+	}
+	.sixty-fourty section:nth-child(1) {
+	width: 50%;
+	}
+	.sixty-fourty section:nth-child(2) {
+	width: 50%;
+	}
+	.fourty-sixty section:nth-child(1) {
+	width: 50%;
+	}
+	.fourty-sixty section:nth-child(2) {
+	width: 50%;
+	}
+
+	.fifty-fifty section:nth-child(1),
+	 .fifty-fifty section:nth-child(2){
+	width: 50%;
+	}
+
+}
+
+
+
+
+
+
+/* Mobile Phones*/
+
+@media screen and (max-width: 480px) {
+	.two-even section,
+	.three-even section,
+	.four-even section,
+	.fifty-fifty section
+	{
+		width:100%;
+	} 
+
+	.nine-even section {
+		width: 33.33%;
+	}
+
+	.ten-even section {
+		width: 20%;
+	}
+
+	
+	.six-even section,
+	.seven-even section,
+	.eight-even section {
+		width: 50%;
+	}
+
+	.five-even section:nth-child(1) {
+		width: 100%;
+	}
+	.five-even section:nth-child(2),
+	.five-even section:nth-child(3),
+	.five-even section:nth-child(4),
+	.five-even section:nth-child(5) {
+		width: 50%;
+	}
+
+	.seven-even section:nth-child(1) {
+		width: 100%;
+	}
+	.seven-even section:nth-child(2),
+	.seven-even section:nth-child(3),
+	.seven-even section:nth-child(4),
+	.seven-even section:nth-child(5),
+	.seven-even section:nth-child(6),
+	.seven-even section:nth-child(7) {
+		width: 50%;
+	}
+
+	.ten-ninety section,
+	.twenty-eighty section,
+	.thirty-seventy section,
+	.fourty-sixty section,
+	.fifty-fifty section,
+	.sixty-fourty section,
+	.seventy-thirty section,
+	.eighty-twenty section,
+	.ninety-ten section {
+		width: 100%;
+	}
+
+}
+
+
+
