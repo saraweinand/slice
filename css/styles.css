@@ -266,12 +266,6 @@ section.title {
 	font-size: 1em;
 }
 
-.aboutsection.three-even section:nth-child(1),
-.aboutsection.three-even section:nth-child(2),
-.aboutsection.three-even section:nth-child(3) {
-	width: 90%;
-	margin: 5% 5%;
-}
 
 div.three-even,
 div.twenty-eighty,
@@ -633,6 +627,8 @@ div.fifty-fifty {
 	}
 
 
+
+
 	button#mobilemenu {
 		visibility: visible;
 		height: 1em;
@@ -686,6 +682,13 @@ div.fifty-fifty {
 .landing h2 {
 	color: #fff;
 	text-align: left;
+}
+
+.aboutsection.three-even section:nth-child(1),
+.aboutsection.three-even section:nth-child(2),
+.aboutsection.three-even section:nth-child(3) {
+	width: 90%;
+	margin: 5% 5%;
 }
 	.col.ten-ninety section.col.two-even section,
 	.col.ten-ninety section.col.three-even section,
