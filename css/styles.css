@@ -1,20 +1,105 @@
 body {
-	font-family: 'Futura', sans-serif;
+	font-family: 'proxmima nova', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	padding: .25em 0;
 	margin: 0;
 }
-.landing {
-	background: #94CEDC;
+
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #444;
 }
-.landing svg {
+.mobile div {
+  display: none;
+  margin: 2% 0;
+}
+.mobile button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: url("http://i.imgur.com/vKRaKDX.png") no-repeat center center ;
+  border-radius: none;
+  background-size: 40%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+a {
+  padding: .5em 0;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.desktop {
+  display: inline-block;
+}
+.desktop a {
+  float: left;
+}
+
+
+.landing {
+	background: #18737a;
+
+}
+
+.landing .sitetitle {
 	width: 40%;
+	display: inline-block;
+	margin: 0 0 0 13%;
+	float: left;
+}
+.landing img {
+	width: 25%;
 	min-width: 300px;
-	display: block;
-	margin: 0 auto;
-	padding: 6% 0 5% 0;
+	display: inline-block;
+	float: left;
+	margin: 0% 0 3% 8%;
+	padding: 0;
+}
+
+
+
+.landing h1:first-of-type {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-top: 22%;
+	text-align: left;
+}
+
+.landing h1:last-of-type {
+	color: #fdde00;
+	font-weight: 600;
+	padding: 1% 0 10% 0;
+	text-align: left;
+}
+
+.landing h2 {
+	color: #fff;
+	text-align: left;
 }
 
 h1 {
@@ -27,7 +112,7 @@ h2 {
 	text-align: center;
 	font-weight: 300;
 	font-size: 1em;
-	text-transform: uppercase;
+
 	color: #444;
 
 }
@@ -43,6 +128,7 @@ h4 {
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 1em;
+
 }
 
 h5 {
@@ -64,6 +150,18 @@ p {
 	color: #444;
 }
 
+.landing button {
+	padding: 1em 3em;
+	text-transform: uppercase;
+	font-size: .75em;
+	display: block;
+	margin: 3% 0 0 0;
+	border: none;
+	color: #fff;
+	background: #4cbfad;
+	text-decoration: none;
+}
+
 button {
 	padding: 1em 3em;
 	text-transform: uppercase;
@@ -72,7 +170,7 @@ button {
 	margin: 3% auto;
 	border: none;
 	color: #fff;
-	background: #DB7819;
+	background: #4cbfad;
 	text-decoration: none;
 }
 
@@ -81,8 +179,10 @@ a {
 }
 
 .nav {
-	background-color: #444;
+	background-color: #18737a;
 	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: .9em;
 }
 
 .nav ul.logo li a img{
@@ -99,7 +199,7 @@ a {
 	opacity: .7;
 }
 
-.nav li:nth-child(4) a img {
+.nav li:nth-child(1) a img {
 	width: 1.25em;
 	padding: 0;
 }
@@ -123,17 +223,18 @@ a {
 .nav li {
 	display: inline-block;
   font-size: 1em;
-  padding: 1em .25em .75em .25em;
+  padding: 1em .6em .75em .6em;
   font-weight: 300;
+  vertical-align: middle;
 
 }
 
  
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #ddd;
   display: block;
-  transition: .3s background-color;
+  font-weight: 400;
 }
 
 .nav a:hover {
@@ -163,6 +264,13 @@ section.title {
 	color: #444;
 	font-weight: 100;
 	font-size: 1em;
+}
+
+.aboutsection.three-even section:nth-child(1),
+.aboutsection.three-even section:nth-child(2),
+.aboutsection.three-even section:nth-child(3) {
+	width: 90%;
+	margin: 5% 5%;
 }
 
 div.three-even,
@@ -208,7 +316,7 @@ div.fifty-fifty {
 
 
 .fork {
-	background: #DB7819;
+	background: #4cbfad;
 	margin-top: 5%;
 }
 
@@ -269,7 +377,7 @@ div.fifty-fifty {
 }
 
 .uikits h4 {
-	color: #DB7819;
+	color: #fdde00;
 	font-size: 3em;
 }
 
@@ -304,6 +412,46 @@ div.fifty-fifty {
 
 
 @media screen and (max-width: 768px) {
+
+
+.landing .sitetitle {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.landing img {
+	width: 25%;
+	min-width: 300px;
+	display: inline-block;
+	float: right;
+	margin: -15% 5% 3% 8%;
+	padding: 0;
+}
+
+
+
+.landing h1:first-of-type {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-top: 15%;
+	text-align: left;
+}
+
+.landing h1:last-of-type {
+	color: #fdde00;
+	font-weight: 600;
+	padding: 1% 0 6% 0;
+	text-align: left;
+}
+
+.landing h2 {
+	color: #fff;
+	text-align: left;
+}
 
 
 	.fifty-fifty section:nth-child(1),
@@ -449,6 +597,96 @@ div.fifty-fifty {
 
 
 @media screen and (max-width: 480px) {
+
+	.nav {
+		background: #444;
+		height: 10%;
+	}
+
+
+	.mobile {
+    display: block;
+        margin-left: -2.5%;
+  }
+
+
+.mobile ul {
+	width: 100%;
+}
+  .mobile li {
+    display: block;
+    width: 100%;
+    text-align: center;
+        
+  }
+
+  .desktop {
+    display: none;
+  }
+
+
+	
+	#desktopnav {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+
+	button#mobilemenu {
+		visibility: visible;
+		height: 1em;
+		width: 1em;
+		position: absolute;
+		top: 2.5%;
+		left: 2%;
+		background: rgb(255,255,255) url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+	}
+
+
+	#mobilenav {
+		visibility: visible;
+		opacity: 0;
+	}
+
+	.landing .sitetitle {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.landing img {
+	width: 25%;
+	min-width: 300px;
+	display: inline-block;
+	float: right;
+	margin: -8% 5% 3% 8%;
+	padding: 0;
+}
+
+
+
+.landing h1:first-of-type {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-top: 15%;
+	text-align: left;
+}
+
+.landing h1:last-of-type {
+	color: #fdde00;
+	font-weight: 600;
+	padding: 1% 0 6% 0;
+	text-align: left;
+}
+
+.landing h2 {
+	color: #fff;
+	text-align: left;
+}
 	.col.ten-ninety section.col.two-even section,
 	.col.ten-ninety section.col.three-even section,
 	.col.ten-ninety section.col.four-even section,
